@@ -1,152 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="./guiaJS.js"></script>
+    <title>Guía de Ejercicios JS</title>
 </head>
 <body>
     <h1>GUIA DE EJERCICIOS JS</h1>
+
     <!--Ejercicio 1-->
-    <div style="height: 10vh;">
-        
-            <h2>Ejercicio 1</h2>
-            <input type="text" id="edad">
-            <button onclick="ejercicio1()">enviar</button>
-        
+    <div>
+        <h2>Ejercicio 1</h2>
+        <label for="edad">Ingrese su edad</label>
+        <input type="number" id="edad">
+        <button onclick="ejercicio1()">Enviar</button>
+        <p id="resultadoEdad"></p>
     </div>
 
     <!--Ejercicio 2-->
     <div>
-        
         <h2>Ejercicio 2</h2>
-            <p>Ingrese Nombre y carnet del alumno</p>
-            <input type="text" placeholder="nombre" id="nombre">
-            <input type="text" placeholder="Carnet" id="carnet">
-            <p>Ingrese notas del alumno</p>
-            <input type="text" placeholder="Examen" id="examen" type="number">
-            <input type="text" placeholder="tareas" id="tareas">
-            <input type="text" placeholder="asistencia" id="asistencia">
-            <input type="text" placeholder="investigacion" id="investigacion">
-            <button onclick="ejecicio2()">Calcular </button>
-        
+        <p>Ingrese Nombre y carnet del alumno</p>
+        <input type="text" placeholder="Nombre" id="nombre">
+        <input type="text" placeholder="Carnet" id="carnet">
+        <p>Ingrese notas del alumno</p>
+        <input type="number" placeholder="Examen" id="examen">
+        <input type="number" placeholder="Tareas" id="tareas">
+        <input type="number" placeholder="Asistencia" id="asistencia">
+        <input type="number" placeholder="Investigacion" id="investigacion">
+        <button onclick="ejercicio2()">Calcular</button>
+        <p id="resultadoNota"></p>
     </div>
 
     <!--Ejercicio 3-->
     <div>
-        
-            <h2>Ejercicio 3</h2>
-            <input type="text" placeholder="Nombre" id="name">
-            <input type="text" placeholder="Salario" id="salario">
-            <input type="text" placeholder="categoria" id="categoria">
-            <button onclick="ejercicio3()">Calcular</button>
-        
+        <h2>Ejercicio 3</h2>
+        <input type="text" placeholder="Nombre" id="name">
+        <input type="number" placeholder="Salario" id="salario">
+        <input type="text" placeholder="Categoria (a-d)" id="categoria">
+        <button onclick="ejercicio3()">Calcular</button>
+        <p id="resultadoSalario"></p>
     </div>
 
     <!--Ejercicio 4-->
     <div>
-
         <h2>Ejercicio 4</h2>
         <label for="primerNumero">Ingrese el primer numero entero</label>
-        <input type="text" id="primerNumero">
+        <input type="number" id="primerNumero">
         <label for="segundoNumero">Ingrese el segundo numero entero</label>
-        <input type="text" id="segundoNumero">
+        <input type="number" id="segundoNumero">
         <button onclick="ejercicio4()">Calcular</button>
-
+        <p id="resultadoMayor"></p>
     </div>
-    
-    <!--Ejercici 5-->
+
+    <!--Ejercicio 5-->
     <div>
-
         <h2>Ejercicio 5</h2>
-        
+        <h3>Elije tu Ford</h3>
         <ul id="coche">
-            <h3>Elije tu Ford</h3>
-            <li ><button onclick="fiesta()" id="fFiesta">Fiesta</button></li>
-            <li ><button onclick="fFocus()" id="fFocus">Focus</button></li>
-            <li ><button onclick="fEscape()" id="fEscape">Escape</button></li>
-            <p id="salida"></p>
+            <li><button onclick="fiesta()">Fiesta</button></li>
+            <li><button onclick="fFocus()">Focus</button></li>
+            <li><button onclick="fEscape()">Escape</button></li>
         </ul>
-
+        <p id="salida"></p>
     </div>
 
     <!--Ejercicio 6-->
     <div>
         <h2>Ejercicio 6</h2>
         <label for="destinos">Elige tu destino</label>
-        <select  id="destinos" >
-            <option >La costa del Sol</option>
-            <option >La Palma</option>
-            <option >Panchimalco</option>
-            <option >Puerto el Triunfo</option>
+        <select id="destinos">
+            <option>La costa del Sol</option>
+            <option>La Palma</option>
+            <option>Panchimalco</option>
+            <option>Puerto el Triunfo</option>
         </select>
-        <button id="viajar" onclick="ejercicio6()">Viajar</button>
-        <h4 id="respuesta"></h4>
-
+        <button onclick="ejercicio6()">Viajar</button>
+        <p id="respuesta"></p>
     </div>
 
     <!--Ejercicio 7-->
     <div>
         <h2>Ejercicio 7</h2>
         <h3>Introduzca 10 valores enteros</h3>
-        <input type="number" class="nuemeros">
-        <input type="number" class="nuemeros">
-        <input type="number" class="nuemeros">
-        <input type="number" class="nuemeros">
-        <input type="number" class="nuemeros">
-        <input type="number" class="nuemeros">
-        <input type="number" class="nuemeros">
-        <input type="number" class="nuemeros">
-        <input type="number" class="nuemeros">
-        <input type="number" class="nuemeros">
+        <input type="number" class="numeros">
+        <input type="number" class="numeros">
+        <input type="number" class="numeros">
+        <input type="number" class="numeros">
+        <input type="number" class="numeros">
+        <input type="number" class="numeros">
+        <input type="number" class="numeros">
+        <input type="number" class="numeros">
+        <input type="number" class="numeros">
+        <input type="number" class="numeros">
         <button onclick="ejercicio7()">Calcular</button>
-        
+        <p id="resultadoNumeros"></p>
     </div>
 
     <!--Ejercicio 8-->
     <div>
         <h2>Ejercicio 8</h2>
-        <label for="tlablas">Tablas de multiplicar</label>
-            <select  id="tablas">
-            <option >1</option>
-            <option >2</option>
-            <option >3</option>
-            <option >4</option>
-            <option >5</option>
-            <option >6</option>
-            <option >7</option>
-            <option >8</option>
-            <option >9</option>
-            <option >10</option>
+        <label for="tablas">Tablas de multiplicar</label>
+        <select id="tablas">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
         </select>
         <button onclick="ejercicio8()">Calcular</button>
-        <h4 id="multiplicacion"></h4>
+        <p id="multiplicacion"></p>
     </div>
 
     <!--Ejercicio 9-->
     <div>
         <h2>Ejercicio 9</h2>
-        <label for="temperatura">Introdusca la temperatura en c°</label>
+        <label for="temperatura">Introduzca la temperatura en °C</label>
         <input type="number" id="temperatura">
         <button onclick="ejercicio9()">Convertir</button>
-        
+        <p id="resultadoTemperatura"></p>
     </div>
 
     <!--Ejercicio 10-->
     <div>
         <h2>Ejercicio 10</h2>
         <h3>Ingrese las edades de los alumnos</h3>
+        <p>Mañana</p>
         <ul>
-            <p>Mañana</p>
-            <li><input type="number" class="mañana"></li>
-            <li><input type="number" class="mañana"></li>
-            <li><input type="number" class="mañana"></li>
-            <li><input type="number" class="mañana"></li>
-            <li><input type="number" class="mañana"></li>
+            <li><input type="number" class="manana"></li>
+            <li><input type="number" class="manana"></li>
+            <li><input type="number" class="manana"></li>
+            <li><input type="number" class="manana"></li>
+            <li><input type="number" class="manana"></li>
         </ul>
+        <p>Tarde</p>
         <ul>
-            <p>Tarde</p>
             <li><input type="number" class="tarde"></li>
             <li><input type="number" class="tarde"></li>
             <li><input type="number" class="tarde"></li>
@@ -154,8 +147,8 @@
             <li><input type="number" class="tarde"></li>
             <li><input type="number" class="tarde"></li>
         </ul>
+        <p>Noche</p>
         <ul>
-            <p>Noche</p>
             <li><input type="number" class="noche"></li>
             <li><input type="number" class="noche"></li>
             <li><input type="number" class="noche"></li>
@@ -173,5 +166,7 @@
         <p id="turno"></p>
         <p id="dato"></p>
     </div>
+
+    <script src="./guiaJS.js"></script>
 </body>
 </html>
